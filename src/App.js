@@ -8,6 +8,7 @@ import uuid from 'uuid';
 import axios from 'axios';
 
 import './App.css';
+import Footer from './components/layout/Footer';
 
 class App extends Component {
   state = {
@@ -75,6 +76,7 @@ class App extends Component {
               )}
             />
             <Route path="/about" component={About} />
+            <Footer />
           </div>
         </div>
       </Router>
