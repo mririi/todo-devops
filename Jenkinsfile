@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         nodejs "node 22"
-        docker "docker"
+        dockerTool "docker"
     }
     stages {
         stage('Checkout from Git') {
