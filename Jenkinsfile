@@ -42,8 +42,8 @@ pipeline {
         stage("Deploy") {
             steps {
                 sh "kubectl apply -f k8s/"
-                sh "kubectl set image deployment/todo-app todo-app=mriri1/todo-app:${env.BUILD_NUMBER}"
                 sh "kubectl rollout status deployment/todo-app"
+                sh "kubectl get pods"
             }
         }
     }
