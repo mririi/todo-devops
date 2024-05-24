@@ -1,8 +1,8 @@
 pipeline {
     agent any
     tools {
-        nodejs 'nodejs'
-        dockerTool 'docker'
+        jdk 'nodejs'
+        docker 'docker'
     }
     stages {
         stage('Checkout from Git') {
